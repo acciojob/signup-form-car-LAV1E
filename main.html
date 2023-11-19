@@ -8,45 +8,46 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	
-    <form method="post">
-		<label for="name">Name*</label>
-		<input id="name" type="text" placeholder="Name" required><br>
+     <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="Text" id="name" name="name" placeholder="Name" required>
 
-		<label for="email">Email*</label>
-		<input id="email" type="email" placeholder="Email" required><br>
+        <label for="email">Email:</label>
+        <input type="Email" id="email" name="email" placeholder="Email" required>
+
+        <label>Gender:</label>
+        <input type="Radio" id="gender_m" name="gender" required>
+        <label for="gender_m">Male</label>
+        <input type="Radio" id="gender_f" name="gender" required>
+        <label for="gender_f">Female</label>
+
+        <label for="cars">Car Brands:</label>
+        <select id="cars" name="cars" required>
+            <option value="" disabled>--Please choose an option--</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedes">Mercedes</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <input type="Number" id="age" name="age" placeholder="Age" required>
+
+        <label for="dob">DOB:</label>
+        <input type="Date" id="dob" name="dob" required>
+
+        <label for="tel">Phone Number:</label>
+        <input type="Tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+
+		<label for="password">Password</label>
+        <input type="Password" id="password" placeholder="Password" required>
 		
-        <label for="gender_m,gender_f">Gender*</label>
-		<label for="gender_m">Male</label>
-		<input name="gender" id="gender_m" type="radio" required><br>
+        <label for="tos"><input type="checkbox"heckbox" id="tos" name="tos" required>
+    I agree to the TOS</label>
 
-		<label for="gender_f">Female</label>
-		<input name="gender" id="gender_f" type="radio" required><br>
-		
-        <!--Drop down-->
-		<label for="laptop" >Laptop Brands:</label>
-		<select name="laptop" id="laptop">
-        <option value="apple">Apple</option>
-        <option value="asus">Asus</option>
-        <option value="hp">HP</option> 
-        </select><br>
-		
 
-		<label for="age">Age*</label>
-		<input id="age" type="number" required placeholder="age"><br>
+        <button type="submit">Sign Up</button>
+    </form>
 
-		<label for="dob">Date of Birth*</label>
-		<input id="dob" type="date" required>
-
-		
-		<label for="password">Password*</label>
-		<input id="password" type="password" required placeholder="Password"><br>
-
-		<label for="portfolio">Portfolio URL</label>
-		<input id="portfolio" type="url">
-		<button type="submit">Submit</button>
-		
-	</form>
 
     <script type="text/javascript" src="./script.js">
 </script>
